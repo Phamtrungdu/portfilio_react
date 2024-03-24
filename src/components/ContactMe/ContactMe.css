@@ -1,0 +1,98 @@
+.contact-container {
+  margin: 4rem 0;
+  position: relative;
+}
+.contact-container h5 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 3rem;
+}
+.contact-content {
+  display: flex;
+  gap: 3rem;
+}
+.github,
+.facebook,
+.email {
+  display: flex;
+  align-items: center;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+.git-icon,
+.facebook-icon,
+.email-icon {
+  position: relative;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  border: 2px solid #6751b9;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  margin: 1rem 1rem;
+  background: linear-gradient(0deg, #8f7cd9 0%, #4f25e7 50%, #291181 100%);
+}
+
+.github i,
+.facebook i,
+.email i {
+  color: #f2f2f4;
+}
+.facebook-icon:hover {
+  background: #0a16ec;
+  border: 2px solid #ffffff;
+}
+.git-icon:hover {
+  background: #090a18;
+  border: 2px solid #ffffff;
+}
+.email-icon:hover {
+  background: #0caaf7;
+  border: 2px solid #ffffff;
+}
+@media screen and (max-width: 1024px) {
+  .contact-container {
+    margin: 0 2.5rem;
+  }
+  .contact-content {
+    margin-bottom: 2rem;
+  }
+  .contact-content span {
+    font-size: 1rem;
+  }
+  .git-icon,
+  .facebook-icon,
+  .email-icon {
+    width: 3rem;
+    height: 3rem;
+    position: relative;
+  }
+}
+@media screen and (max-width: 768px) {
+  .contact-content {
+    flex-direction: column-reverse;
+  }
+  .contact-container h5 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+  }
+  .contact-content span {
+    width: 7rem;
+    font-size: 0.8rem;
+    display: none;
+  }
+  .git-icon,
+  .facebook-icon,
+  .email-icon {
+    width: 3rem;
+    height: 3rem;
+    position: relative;
+  }
+  .git-fb-email {
+    display: flex;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+  }
+}
